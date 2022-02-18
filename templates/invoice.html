@@ -58,10 +58,6 @@
     border-bottom: 1px solid #eee;
   }
   
-  .invoice-box table tr.item.last td {
-    border-bottom: none;
-  }
-  
   .invoice-box table tr.total td:nth-child(2) {
     border-top: 2px solid #eee;
     font-weight: bold;
@@ -83,31 +79,9 @@
 
   @page {
     size: a4 portrait;
-    margin: 0mm 0mm 0mm 0mm;
+    margin: 5mm 0mm 0mm 0mm;
   }
 
-  div.divFooter {
-    position: fixed;
-    height: 30px;
-    background-color: purple;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-  }
-  
-  /** RTL **/
-  .rtl {
-    direction: rtl;
-    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-  }
-  
-  .rtl table {
-    text-align: right;
-  }
-  
-  .rtl table tr td:nth-child(2) {
-    text-align: left;
-  }
   </style>
 </head>
 
@@ -120,10 +94,10 @@
             <tr>
               <td class="title">
                 <img src="https://i.imgur.com/qGsKgNH.png?1" style="width: 100%; max-width: 300px"><br>
-                <p style="font-size: 18px">Powered by <img src="https://i.imgur.com/edx5Sb0.png" style="margin-bottom: -8px ;max-width: 40px"></p>
+                <p style="font-size: 18px">Powered by <img src="https://i.imgur.com/edx5Sb0.png" style="margin-bottom: -8px; margin-left: 5px; max-width: 30px"></p>
               </td>
               <td>
-                Invoice #: {{invoice_number}}<br>
+                Invoice #{{invoice_number}}<br>
                 Created: {{date}}<br>
                 Due: {{duedate}}
               </td>
@@ -179,6 +153,5 @@
       </tr>
     </table>
   </div>
-  <div class="divFooter"></div>
 </body>
 </html>
