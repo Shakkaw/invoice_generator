@@ -37,10 +37,24 @@ url = "http://192.168.1.7:5000/"  # the server url here, in this case is the loc
 #     }
 # }
 
+
 print("Fill the information of the invoice\n\n")
 
 
-invoice_number = 1  # * TODO: make this a commulative number
+def get_invoice_number(filename="invoice_number.dat"):
+    with open(filename, "a+") as f:
+        f.seek(0)
+        val = int(f.read() or 0) + 1
+        f.seek(0)
+        f.truncate()
+        f.write(str(val))
+        return val
+
+
+number = get_invoice_number()
+year = datetime.today().strftime("%Y")
+
+invoice_number = f"{number}/{year}"
 duedate = input("\nDue date (day month, year):  ")
 
 from_addr = {
