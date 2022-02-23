@@ -1,4 +1,3 @@
-# from fileinput import filename
 from flask import Flask, render_template, send_file, request
 from datetime import datetime
 from weasyprint import HTML
