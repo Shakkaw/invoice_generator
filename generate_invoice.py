@@ -13,16 +13,18 @@ def invoice_template():
 
     posted_data = request.get_json() or {}
 
-    today = datetime.today().strftime("%-d %B , %Y")
+    today = datetime.today().strftime("%-d %B %Y")
+    underscored_today = datetime.today().strftime("%-d_%m_%Y")
+    year = datetime.today().strftime("%Y")
 
     default_data = {
-        "duedate": "28 Fevereiro, 2022",
+        "duedate": "28 February 2022",
         "from_addr": {
             "company_name": "André Lopes LDA.",
             "addr1": "Rua 1º de Maio, 44-A",
             "addr2": "6300-111 Guarda",
         },
-        "invoice_number": 1,
+        "invoice_number": f'1/{year}',
         "items": [
             {"title": "Montagem servidor", "charge": 450.00},
             {"title": "Configuração servidor", "charge": 150.00},
@@ -61,7 +63,7 @@ def invoice_template():
     )  # enter the relative path here if you want to save the invoice instead of sending it,
     # be aware that will make the webpage show a "Could not load the PDF" error
 
-    return send_file(io.BytesIO(rendered_pdf), download_name="invoice.pdf")
+    return send_file(io.BytesIO(rendered_pdf), download_name=f"invoice_{underscored_today}.pdf")
 
 
 if __name__ == "__main__":
