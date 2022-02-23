@@ -1,10 +1,8 @@
-# attrs @ file:///home/shakaw/.cache/pypoetry/artifacts/c4/ee/75/fcd6c2f4c5a1d60b1bcd97014702ca01b3f032fd927d88780b38708409/attrs-21.4.0-py2.py3-none-any.whl
 black==22.1.0
 Brotli==1.0.9
 certifi==2021.10.8
 cffi==1.15.0
 charset-normalizer==2.0.12
-# click @ file:///home/shakaw/.cache/pypoetry/artifacts/b3/fd/d9/1bf6cc4e6a7fdf7eced662eddb1af6d4b10440530b80397b22db17a805/click-8.0.4-py3-none-any.whl
 cssselect2==0.4.1
 Flask==2.0.3
 fonttools==4.29.1
@@ -13,25 +11,18 @@ idna==3.3
 itsdangerous==2.1.0
 Jinja2==3.0.3
 MarkupSafe==2.1.0
-# more-itertools @ file:///home/shakaw/.cache/pypoetry/artifacts/9e/52/3a/489f50407b5edf2f62c50aebef94c1eab4516190e375999a63163f8650/more_itertools-8.12.0-py3-none-any.whl
 mypy-extensions==0.4.3
-# packaging @ file:///home/shakaw/.cache/pypoetry/artifacts/d3/1f/90/3f2473250ebd055fe7f0856810677783949fc0d2e5f25bbb4dc00ad0a9/packaging-21.3-py3-none-any.whl
 pathspec==0.9.0
 Pillow==9.0.1
 platformdirs==2.5.0
-# pluggy @ file:///home/shakaw/.cache/pypoetry/artifacts/5c/74/60/0a66715d8599e4bd0cf44f05ca11f99f9a3674820bd68856704692b818/pluggy-0.13.1-py2.py3-none-any.whl
-# py @ file:///home/shakaw/.cache/pypoetry/artifacts/71/fb/64/bfdc833c2055a893883f33deaac35ef2cbdd95d58031cfc69a630f32bf/py-1.11.0-py2.py3-none-any.whl
 pycparser==2.21
 pydyf==0.1.2
-# pyparsing @ file:///home/shakaw/.cache/pypoetry/artifacts/dd/d9/cf/3501b38e834b80f9ba80633358cced32539bea5dc1e786f4c2b1d2f682/pyparsing-3.0.7-py3-none-any.whl
 pyphen==0.12.0
-# pytest @ file:///home/shakaw/.cache/pypoetry/artifacts/57/1c/f3/15f706754e9e232390482021cb2d6b1308eb6ad0d8160b165a2e2307ef/pytest-5.4.3-py3-none-any.whl
 requests==2.27.1
 six==1.16.0
 tinycss2==1.1.1
 tomli==2.0.1
 urllib3==1.26.8
-# wcwidth @ file:///home/shakaw/.cache/pypoetry/artifacts/f1/2c/b7/d07af82a7caf20dd582cb8799baa7afd56c6240109e527ee2a904b43e4/wcwidth-0.2.5-py2.py3-none-any.whl
 weasyprint==54.1
 webencodings==0.5.1
 Werkzeug==2.0.3
